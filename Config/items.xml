@@ -1,0 +1,60 @@
+<configs>
+
+  <!-- Weapons in general -->
+  <!-- <set xpath="/items/item[contains(@name,'gun')]/property[@name='CrosshairOnAim']/@value">false</set> -->
+
+  <!-- Bows -->
+  <!-- <set xpath="/items/item[contains(@name,'PrimitiveBow')]/property[@name='CrosshairOnAim']/@value">false</set> -->
+  <!-- <set xpath="/items/item[contains(@name,'WoodenBow')]/property[@name='CrosshairOnAim']/@value">false</set> -->
+  <set xpath="/items/item[contains(@name,'CompoundBow')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- Crossbows -->
+  <set xpath="/items/item[contains(@name,'IronCrossbow')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'CompoundCrossbow')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <!-- DEPRECATED -->
+  <set xpath="/items/item[contains(@name,'gunCrossbow')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- Pistols -->
+  <set xpath="/items/item[contains(@name,'PipePistol')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'Pistol')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'Magnum44')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'DesertVulture')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <!-- DEPRECATED -->
+  <set xpath="/items/item[contains(@name,'gun44Magnum')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- Shotguns -->
+  <set xpath="/items/item[contains(@name,'PipeShotgun')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'DoubleBarrel')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'PumpShotgun')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'AutoShotgun')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <!-- DEPRECATED -->
+  <set xpath="/items/item[contains(@name,'Blunderbuss')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- Submachine Guns -->
+  <set xpath="/items/item[contains(@name,'SMG5')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- Assault Rifles -->
+  <set xpath="/items/item[contains(@name,'PipeMachineGun')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'AK47')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'TacticalAR')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- Rifles -->
+  <set xpath="/items/item[contains(@name,'PipeRifle')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'HuntingRifle')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'LeverActionRifle')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'SniperRifle')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <!-- DEPRECATED -->
+  <set xpath="/items/item[contains(@name,'gunMR10')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- Machine Guns -->
+  <set xpath="/items/item[contains(@name,'M60')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- Rocket Launchers -->
+  <set xpath="/items/item[contains(@name,'RocketLauncher')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- Miscellaneous -->
+  <set xpath="/items/item[contains(@name,'Nailgun')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'JunkTurret')]/property[@name='CrosshairOnAim']/@value">false</set>
+
+</configs>
+
