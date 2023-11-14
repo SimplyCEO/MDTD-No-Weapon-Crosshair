@@ -35,6 +35,16 @@ FAQ
   If the weapon has no sight, it will be deactivated. For the hardcore players it is recommended to uncomment the lines.
 </details>
 
+<details><summary><b>Is it compatible with older versions?</b></summary>
+  I did not tested, but it should. There are deprecated lists on internet. I just added older guns like Blunderbuss and MR10.
+</details>
+
+Repositories
+------------
+
+- https://gitlab.com/moredaystodie/no-weapon-crosshair (master)
+- https://github.com/KanuX-14/MDTD-No-Weapon-Crosshair (mirror)
+
 References
 ----------
 
