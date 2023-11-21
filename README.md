@@ -11,6 +11,8 @@ Aim with any gun and the crosshair will disappear.
 Installation
 ------------
 
+First download the mod's archive. [[ZIP](https://gitlab.com/moredaystodie/no-weapon-crosshair/-/archive/master/no-weapon-crosshair-master.zip)/[TAR](https://gitlab.com/moredaystodie/no-weapon-crosshair/-/archive/master/no-weapon-crosshair-master.tar.gz)]
+
 Move the `no-weapon-crosshair-master` folder to 7 Days to Die's mod folder.<br>
 
 - Steam:
