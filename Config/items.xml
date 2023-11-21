@@ -1,4 +1,6 @@
-<configs>
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<mdtdNoWeaponCrosshair>
 
   <!-- Weapons in general -->
   <!-- <set xpath="/items/item[contains(@name,'gun')]/property[@name='CrosshairOnAim']/@value">false</set> -->
@@ -56,5 +58,5 @@
   <set xpath="/items/item[contains(@name,'Nailgun')]/property[@name='CrosshairOnAim']/@value">false</set>
   <set xpath="/items/item[contains(@name,'JunkTurret')]/property[@name='CrosshairOnAim']/@value">false</set>
 
-</configs>
+</mdtdNoWeaponCrosshair>
 
