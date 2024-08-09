@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <xml>
-  <ModInfo>
-    <Name value="No_Weapon_Crosshair"/>
-    <Description value="Remove the UI crosshair from weapons while aiming down sight and with scopes."/>
-    <Author value="MoreDaysToDie"/>
-    <Version value="0.0.2" />
-  </ModInfo>
+  <Name value="No_Weapon_Crosshair"/>
+  <DisplayName value="No Weapon Crosshair"/>
+  <Description value="Remove the UI crosshair from weapons while aiming down sight and with scopes."/>
+  <Version value="0.1.0" compat="A22,A21,A20,A19"/>
+  <Author value="MoreDaysToDie"/>
+  <Author value="SimplyCEO"/>
+  <Website value="https://gitlab.com/moredaystodie/no-weapon-crosshair"/>
 </xml>
 
