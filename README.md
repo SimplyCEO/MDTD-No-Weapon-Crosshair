@@ -1,5 +1,5 @@
-No Weapon Crosshair
-===================
+No Weapon Crosshair [ADS]
+=========================
 
 Remove the UI crosshair from weapons while aiming down sight and with scopes.
 
@@ -45,11 +45,12 @@ Repositories
 ------------
 
 - https://gitlab.com/moredaystodie/no-weapon-crosshair (master)
-- https://github.com/KanuX-14/MDTD-No-Weapon-Crosshair (mirror)
+- https://github.com/SimplyCEO/MDTD-No-Weapon-Crosshair (mirror)
 
 References
 ----------
 
 This mod is based on TSBX-7D's modlet [TSBX_noADScrosshair](https://github.com/TSBX-7D/Modlets/tree/master/TSBX_noADScrosshair).<br>
+It has modified camera offset from [Sugar's 7D2D Modlets](https://github.com/GitSugar/Sugars-7d2d-modlets).<br>
 7 Days to Die deprecated item list: https://commands.gg/7dtd/items.
 
