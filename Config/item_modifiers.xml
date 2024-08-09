@@ -1,7 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <mdtdNoWeaponCrosshair>
+  <!-- Remove crosshair if weapon contains either a scope or a reflex -->
   <set xpath="/item_modifiers/item_modifier[contains(@name,'Scope')]/item_property_overrides[1]/property[@name='CrosshairOnAim']/@value">false</set>
-  <set xpath="/item_modifiers/item_modifier[contains(@name,'Sight')]/item_property_overrides[1]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/item_modifiers/item_modifier[contains(@name,'Reflex')]/item_property_overrides[1]/property[@name='CrosshairOnAim']/@value">false</set>
+
+  <!-- ADS configuration -->
+
+  <!-- Red Dot / Holosight -->
+  <remove xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='*']"/>
+  <insertAfter xpath="//item_modifier[@name='modGunReflexSight']/property[@name='TraderStageTemplate']">
+    <item_property_overrides name="*">
+      <property name="CrosshairOnAim" value="false"/>
+      <property name="Zoom_max_out" value="50"/>
+      <property name="Zoom_max_in" value="45"/>
+    </item_property_overrides>
+  </insertAfter>
+
+  <!-- Pistols -->
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipePistol')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipePistol')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipePistol')]/property[@name='ScopeCameraOffset']/@value">0,-.0035,.15</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'Pistol')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'Pistol')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'Pistol')]/property[@name='ScopeCameraOffset']/@value">0,-.013,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'Magnum44')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'Magnum44')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'Magnum44')]/property[@name='ScopeCameraOffset']/@value">0,-.015,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'DesertVulture')]/property[@name='ScopeCameraOffset']/@value">0,-.01,0</set>
+
+  <!-- Shotguns -->
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeShotgun')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeShotgun')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeShotgun')]/property[@name='ScopeCameraOffset']/@value">.0002,-.0025,-0.15</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'DoubleBarrel')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'DoubleBarrel')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'DoubleBarrel')]/property[@name='ScopeCameraOffset']/@value">-.0004,-.034,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PumpShotgun')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PumpShotgun')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PumpShotgun')]/property[@name='ScopeCameraOffset']/@value">0,-.0255,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'AutoShotgun')]/property[@name='ScopeCameraOffset']/@value">.00095,-.019,.10</set>
+
+  <!-- Submachine Guns -->
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'SMG5')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'SMG5')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'SMG5')]/property[@name='ScopeCameraOffset']/@value">0,-.015,0</set>
+
+  <!-- Assault Rifles -->
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeMachineGun')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeMachineGun')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeMachineGun')]/property[@name='ScopeCameraOffset']/@value">0,-.018,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'AK47')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'AK47')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'AK47')]/property[@name='ScopeCameraOffset']/@value">0.0005,-.01925,0.4</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'TacticalAR')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'TacticalAR')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'TacticalAR')]/property[@name='ScopeCameraOffset']/@value">0,.0025,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'M60')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'M60')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'M60')]/property[@name='ScopeCameraOffset']/@value">0,-0.01,0.25</set>
+
+  <!-- Rifles -->
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeRifle')]/property[@name='ScopeOffset']/@value">0,0,0</set> <!-- Not working x 3-->
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeRifle')]/property[@name='ScopeScale']/@value">1,1,1</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeRifle')]/property[@name='ScopeCameraOffset']/@value">0,0.0105,-0.1</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'HuntingRifle')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'HuntingRifle')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'HuntingRifle')]/property[@name='ScopeCameraOffset']/@value">0,0.0085,0.3</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'LeverActionRifle')]/property[@name='ScopeOffset']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'LeverActionRifle')]/property[@name='ScopeScale']/@value">0,0,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'LeverActionRifle')]/property[@name='ScopeCameraOffset']/@value">-0.0007,.00265,0</set>
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'SniperRifle')]/property[@name='ScopeCameraOffset']/@value">0.0005,-0.0137,0</set>
+
 </mdtdNoWeaponCrosshair>
 

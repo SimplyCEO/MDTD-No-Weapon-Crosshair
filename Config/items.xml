@@ -9,6 +9,9 @@
   <!-- <set xpath="/items/item[contains(@name,'PrimitiveBow')]/property[@name='CrosshairOnAim']/@value">false</set> -->
   <!-- <set xpath="/items/item[contains(@name,'WoodenBow')]/property[@name='CrosshairOnAim']/@value">false</set> -->
   <set xpath="/items/item[contains(@name,'CompoundBow')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <append xpath="/items/item[contains(@name,'CompoundBow')]/property[@class='Action1']">
+    <property name="SightsCameraOffset" value="0,0,.027"/>
+  </append>
 
   <!-- Crossbows -->
   <set xpath="/items/item[contains(@name,'IronCrossbow')]/property[@name='CrosshairOnAim']/@value">false</set>
@@ -18,38 +21,63 @@
 
   <!-- Pistols -->
   <set xpath="/items/item[contains(@name,'PipePistol')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'PipePistol')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">0,.0008,.2</set>
   <set xpath="/items/item[contains(@name,'Pistol')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'Pistol')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">.0001,.0008,.1</set>
   <set xpath="/items/item[contains(@name,'Magnum44')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <append xpath="/items/item[contains(@name,'Magnum44')]/property[@class='Action1']">
+    <property name="SightsCameraOffset" value="0,.0004,.3"/>
+  </append>
   <set xpath="/items/item[contains(@name,'DesertVulture')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'DesertVulture')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">-.0001,.0008,.1</set>
   <!-- DEPRECATED -->
   <set xpath="/items/item[contains(@name,'gun44Magnum')]/property[@name='CrosshairOnAim']/@value">false</set>
 
   <!-- Shotguns -->
   <set xpath="/items/item[contains(@name,'PipeShotgun')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'PipeShotgun')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">0,.005,.08</set>
   <set xpath="/items/item[contains(@name,'DoubleBarrel')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'DoubleBarrel')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">0,.0275,.08</set>
   <set xpath="/items/item[contains(@name,'PumpShotgun')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'PumpShotgun')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">0,.0002,.08</set>
   <set xpath="/items/item[contains(@name,'AutoShotgun')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'AutoShotgun')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">0,0,.08</set>
   <!-- DEPRECATED -->
   <set xpath="/items/item[contains(@name,'Blunderbuss')]/property[@name='CrosshairOnAim']/@value">false</set>
 
   <!-- Submachine Guns -->
   <set xpath="/items/item[contains(@name,'SMG5')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'SMG5')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">0,.002,.11</set>
 
   <!-- Assault Rifles -->
   <set xpath="/items/item[contains(@name,'PipeMachineGun')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'PipeMachineGun')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">.001,0,.15</set>
   <set xpath="/items/item[contains(@name,'AK47')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'AK47')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">0,0,.4</set>
   <set xpath="/items/item[contains(@name,'TacticalAR')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'TacticalAR')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">0,0,.07</set>
 
   <!-- Rifles -->
   <set xpath="/items/item[contains(@name,'PipeRifle')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <append xpath="/items/item[contains(@name,'PipeRifle')]/property[@class='Action1']">
+    <property name="SightsCameraOffset" value="0,.0150,.08"/>
+  </append>
   <set xpath="/items/item[contains(@name,'HuntingRifle')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <append xpath="/items/item[contains(@name,'HuntingRifle')]/property[@class='Action1']">
+    <property name="SightsCameraOffset" value="0,.02,.3"/>
+  </append>
   <set xpath="/items/item[contains(@name,'LeverActionRifle')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <append xpath="/items/item[contains(@name,'LeverActionRifle')]/property[@class='Action1']">
+    <property name="SightsCameraOffset" value=".00001,.0185,.08"/>
+  </append>
   <set xpath="/items/item[contains(@name,'SniperRifle')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'SniperRifle')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">0,0,.3</set>
   <!-- DEPRECATED -->
   <set xpath="/items/item[contains(@name,'gunMR10')]/property[@name='CrosshairOnAim']/@value">false</set>
 
   <!-- Machine Guns -->
   <set xpath="/items/item[contains(@name,'M60')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <set xpath="/items/item[contains(@name,'M60')]/property[@class='Action1']/property[@name='SightsCameraOffset']/@value">-.0005,0,.3</set>
 
   <!-- Rocket Launchers -->
   <set xpath="/items/item[contains(@name,'RocketLauncher')]/property[@name='CrosshairOnAim']/@value">false</set>
