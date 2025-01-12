@@ -14,8 +14,8 @@
   </append>
 
   <!-- Crossbows -->
-  <set xpath="/items/item[contains(@name,'IronCrossbow')]/property[@name='CrosshairOnAim']/@value">false</set>
-  <set xpath="/items/item[contains(@name,'CompoundCrossbow')]/property[@name='CrosshairOnAim']/@value">false</set>
+  <!-- <set xpath="/items/item[contains(@name,'IronCrossbow')]/property[@name='CrosshairOnAim']/@value">false</set> -->
+  <!-- <set xpath="/items/item[contains(@name,'CompoundCrossbow')]/property[@name='CrosshairOnAim']/@value">false</set> -->
   <!-- DEPRECATED -->
   <set xpath="/items/item[contains(@name,'gunCrossbow')]/property[@name='CrosshairOnAim']/@value">false</set>
 
