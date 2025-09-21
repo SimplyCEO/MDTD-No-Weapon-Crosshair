@@ -44,7 +44,8 @@
   <!-- Submachine Guns -->
   <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'SMG5')]/property[@name='ScopeOffset']/@value">0,0,0</set>
   <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'SMG5')]/property[@name='ScopeScale']/@value">0,0,0</set>
-  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'SMG5')]/property[@name='ScopeCameraOffset']/@value">0,-.015,0</set>
+  <!-- <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'SMG5')]/property[@name='ScopeCameraOffset']/@value">0,-.015,0</set> -->
+  <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'SMG5')]/property[@name='ScopeCameraOffset']/@value">0,-.0375,0</set>
 
   <!-- Assault Rifles -->
   <set xpath="//item_modifier[@name='modGunReflexSight']/item_property_overrides[contains(@name,'PipeMachineGun')]/property[@name='ScopeOffset']/@value">0,0,0</set>
